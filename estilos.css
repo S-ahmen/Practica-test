@@ -1,0 +1,83 @@
+/* GONZALO CABEZAS NÚÑEZ, 10/07/25 */
+
+/* IMPORT OWN RESET */
+@import url(https://open-utils-alpha.vercel.app/utils/custom-reset.css);
+
+/* GLOBAL STYLES */
+body {
+    font-family: sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+header {
+    border-radius: 10px 10px 0 0;
+}
+main {
+    height: 600px;
+    display: flex;
+    border: 2px solid black;
+}
+footer {
+    border-radius: 0 0 10px 10px;
+}
+header, footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+header, main, footer {
+    align-items: center;
+    padding: 0 20px;
+}
+a {
+    color: white;
+}
+nav a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.5s ease-in-out;
+}
+nav a:hover {
+    box-shadow: grey 3px 3px 12px;
+    border: 1px solid white;
+}
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* HOME-PAGE STYLES */
+.home-page {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+header img {
+    width: 250px;
+    height: auto;
+    filter: grayscale(100%);
+}
+header img:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease-in-out;
+}
+
+/* LANDING-PAGES STYLES */
+.landing-page {
+    display: flex;
+    gap: 20px;
+}
+.landing-img {
+    display: inline-flex;
+    width: 172px;
+    height: 172px;
+}
+section p {
+    line-height: 1.6em;
+}
